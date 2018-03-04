@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="vumobile.com.fitness.club.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/slidingRecycler"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/slidein_recycler_height"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="#000"
+                    android:id="@+id/txtSubscription"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="আপনি ফিটনেস ক্লাব এ রেজিস্টার গ্রাহক নন । প্রতিদিন ৫টি ভিডিও ফ্রি দেখতে এবং সকল ফিটনেস টিপস ফ্রি পড়তে নিচের নিবন্ধন বাটনটি অথবা যে কোনো কন্টেন্ট এ ক্লিক করুন । 
+প্রতিদিন চার্জ ২টাকা (+ভ্যাট +এসডি+এসসি)/ অটো-রিনিউয়াল"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btnSubscription"
+                    android:textColor="#fff"
+                    android:text="Subscription"
+                    android:background="@drawable/custom_button_info"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp" />
+
+
+                 <!--Daily exercise-->
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutDailyExercise"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/base_color">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/newvideoHeader"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="ডেইলি এক্সারসাইজ"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerDailyExercise"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"/>
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutInfoTainment"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/base_color">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="ইনফোটেইনমেন্ট"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerDailyInfo"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"/>
+
+                <!--celebrity workout video-->
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutWorkOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/base_color">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="সেলিব্রিটি ওয়ার্ক আউট ভিডিও"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtMoreWorkOut"
+                                android:paddingRight="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center|right"
+                                android:layout_gravity="right"
+                                android:text="আরও..."
+                                android:layout_marginRight="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerWorkOut"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"/>
+
+                <!--healthy receipy video-->
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutHealthy"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/base_color">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:text="হেলদি রেসিপি ভিডিও"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtMoreHealthyReceipy"
+                                android:paddingRight="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center|right"
+                                android:layout_gravity="right"
+                                android:text="আরও..."
+                                android:layout_marginRight="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#ffffff"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerHealthyReceipy"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:text="Unsubscribe"
+                    android:layout_gravity="center"
+                    android:background="@color/base_color"
+                    android:id="@+id/btnUnsubscribe"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutFooterOne"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@color/base_color"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/imgHome"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <ImageView
+                        android:id="@+id/imgFaq"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/footer_two"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgLog"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/footer_three"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFooterTwo"
+                    android:layout_gravity="center"
+                    android:background="@color/base_color"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="FitnessClub © . All Rights Reserved."
+                        android:textColor="#fff"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+        
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

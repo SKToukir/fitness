@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainlayoutCustom"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutCustom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:maxLines="4"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/notificationTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="24"
+            android:text="4:50 pm"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/IconDownload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutCustom"
+        android:background="@color/other_color"
+        android:gravity="center">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageViewTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/NotifibtnDownload"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="215dp"
+        android:background="#bb000000"
+        android:fontFamily="arial"
+        android:gravity="center"
+        android:text="দেখুন"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!--    <Button
+            android:id="@+id/notifiation_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/closebutton" />-->
+
+</RelativeLayout>

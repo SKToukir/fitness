@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "657752578389",
+    "firebase_url": "https://fitnessclub-57ff7.firebaseio.com",
+    "project_id": "fitnessclub-57ff7",
+    "storage_bucket": "fitnessclub-57ff7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657752578389:android:6bd8d8ab8af8f690",
+        "android_client_info": {
+          "package_name": "vumobile.com.fitness.club"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657752578389-o6co8tll8gltt1rcm21mj40cjq8ti8ip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vumobile.com.fitness.club",
+            "certificate_hash": "2c551e8167d14cc61875477bb1e7554db1aa5b4c"
+          }
+        },
+        {
+          "client_id": "657752578389-4sc3k7ed7t5ntg5r9qntcr57rve32ir2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfAPJfwKokPjJjMj-v2HhkwUwHj_Zj6XQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657752578389-4sc3k7ed7t5ntg5r9qntcr57rve32ir2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

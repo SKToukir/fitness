@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/base_color">
+
+        <RelativeLayout
+            android:id="@+id/layout_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/nav_header"
+                layout="@layout/nav_header_main" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@+id/nav_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/txtHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_home" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="হোম "
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtWLEV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_wl" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" ওয়েট লস এক্সারসাইজ ভিডিও "
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtDYP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_dyp" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" ডেইলি ইয়োগা প্রাকটিস ভিডিও"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtHRC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_hrv" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" হোম রেমেডি চ্যানেল ভিডিও"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtFT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ft" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ফুড টিপস "
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtHT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_ht" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="হেলথ টিপস"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtCWO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_cwv" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" সেলিব্রিটি ওয়ার্ক আউট ভিডিও"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtHR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nav_hrc" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" হেলদি রেসিপি ভিডিও"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:id="@+id/txtFAV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_action_fav" />
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text=" ফেভারিট"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+                <View
+                    android:background="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

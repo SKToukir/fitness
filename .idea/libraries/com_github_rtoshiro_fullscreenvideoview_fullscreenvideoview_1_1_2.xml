@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.rtoshiro.fullscreenvideoview:fullscreenvideoview-1.1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fullscreenvideoview-1.1.2.aar/ad59a276c9142b8926724531fa067528/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fullscreenvideoview-1.1.2.aar/ad59a276c9142b8926724531fa067528/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rtoshiro.fullscreenvideoview/fullscreenvideoview/1.1.2/c271a7b0b43ab82f848f67a8ee6afc8cd6ab3086/fullscreenvideoview-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

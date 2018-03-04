@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alertstyle"
+    android:padding="2dp">
+
+    <WebView
+        android:id="@+id/webviewSubcription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+
+    <!--<LinearLayout-->
+    <!--android:visibility="visible"-->
+    <!--android:id="@+id/linearLayout1"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:src="@mipmap/ic_launcher" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:src="@drawable/service_registration" />-->
+
+    <!--<TextView-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:id="@+id/imageView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="প্রতিদিন আনলিমিটেড (ফ্রি) গেম খেলতে \n ২ টাকা + ভ্যাট + এসডি,এসসি \n প্রতিদিন নবায়নযোগ্য"-->
+    <!--android:textColor="#000"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btnYes"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:background="@drawable/nibodhon" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/cancel_to_home" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btnCancelSub"-->
+    <!--android:layout_width="110dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:background="@drawable/baatil" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
